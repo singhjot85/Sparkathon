@@ -21,3 +21,4 @@ product_state_counts = product_state_counts.merge(total_product_counts, on='Prod
 product_state_counts['Percentage'] = (product_state_counts['Quantity Ordered'] / product_state_counts['Quantity Ordered_Total']) * 100
 
 print(product_state_counts)
+product_state_counts.to_csv(r'Data\product_state_counts.csv', index=False)
